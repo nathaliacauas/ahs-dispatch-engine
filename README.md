@@ -30,13 +30,13 @@ The system is divided into three main layers:
 
     .Dispatch Layer (dispatch)
     Implements the decision engine:
-        >DispatchPolicy (Strategy interface)
-        >DeterministicScorePolicy
-        >EtaFirstPolicy
-        >DispatchEngine
-        >DispatchDecision
+    >DispatchPolicy (Strategy interface)
+    >DeterministicScorePolicy
+    >EtaFirstPolicy
+    >DispatchEngine
+    >DispatchDecision
 
-        The engine is policy-agnostic and supports strategy swapping without modification.
+    The engine is policy-agnostic and supports strategy swapping without modification.
 
     .Utility Layer (util)
         >Logger
