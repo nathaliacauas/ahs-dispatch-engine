@@ -39,7 +39,6 @@ The system is divided into three main layers:
         The engine is policy-agnostic and supports strategy swapping without modification.
 
     .Utility Layer (util)
-
         >Logger
             Persistent structured logging to:
             logs/dispatch.log
@@ -79,8 +78,8 @@ The system is divided into three main layers:
         >Maven 3.9+
     
     .Build and Test:
-    -mvn clean test
   
+    -mvn clean test  
     -mvn package
 
 + Run
