@@ -16,7 +16,7 @@ AHS Dispatch Engine – Java
 + Architecture
 The system is divided into three main layers:
 
-    -Domain Layer (domain)
+    .Domain Layer (domain)
     Represents core business entities:
         >AutonomousTruck
         >HaulMission
@@ -28,7 +28,7 @@ The system is divided into three main layers:
             >State transitions happen inside AutonomousTruck
             >Validation logic is embedded in domain objects
 
-    -Dispatch Layer (dispatch)
+    .Dispatch Layer (dispatch)
     Implements the decision engine:
         >DispatchPolicy (Strategy interface)
         >DeterministicScorePolicy
@@ -38,7 +38,7 @@ The system is divided into three main layers:
 
         The engine is policy-agnostic and supports strategy swapping without modification.
 
-    -Utility Layer (util)
+    .Utility Layer (util)
 
         >Logger
             Persistent structured logging to:
@@ -65,29 +65,30 @@ The system is divided into three main layers:
 
 + Design Principles
 
-    -Deterministic execution
-    -Strategy Pattern
-    -Immutability where appropriate
-    -Defensive programming
-    -Separation of concerns
-    -Testability
+    .Deterministic execution
+    .Strategy Pattern
+    .Immutability where appropriate
+    .Defensive programming
+    .Separation of concerns
+    .Testability
 
 + Build
 
-    -Requires:
+    .Requires:
         >Java 17+
         >Maven 3.9+
     
-    -Build and Test:
-    * mvn clean test
-    * mvn package
+    .Build and Test:
+    -mvn clean test
+  
+    -mvn package
 
 + Run
 
-    * java -cp target/classes com.komatsu.sample.ahsdispatch.Run
+    -java -cp target/classes com.komatsu.sample.ahsdispatch.Run
 
 + Logs
-    -Logs will be persisted in: logs/dispatch.log
+    .Logs will be persisted in: logs/dispatch.log
 
 + Author
 Nathália Cauás
