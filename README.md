@@ -25,8 +25,8 @@ The system is divided into three main layers:
         >TruckStatus
 
         Encapsulation is enforced:
-            >State transitions happen inside AutonomousTruck
-            >Validation logic is embedded in domain objects
+        >State transitions happen inside AutonomousTruck
+        >Validation logic is embedded in domain objects
 
     .Dispatch Layer (dispatch)
     Implements the decision engine:
@@ -44,7 +44,6 @@ The system is divided into three main layers:
             logs/dispatch.log
 
         Includes:
-
         >Timestamped logs
         >Log rotation (size-based)
         >Fail-safe logging behavior
