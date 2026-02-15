@@ -55,7 +55,6 @@ The system is divided into three main layers:
         > (battery_weight × battery_level) − (fairness_penalty × previous_assignments)
 
         This ensures:
-
         Higher priority missions are preferred
         Closer trucks are preferred
         Low battery trucks are filtered
@@ -63,30 +62,29 @@ The system is divided into three main layers:
 
 + Design Principles
 
-    .Deterministic execution
-    .Strategy Pattern
-    .Immutability where appropriate
-    .Defensive programming
-    .Separation of concerns
-    .Testability
+    >Deterministic execution
+    >Strategy Pattern
+    >Immutability where appropriate
+    >Defensive programming
+    >Separation of concerns
+    >Testability
 
 + Build
-
-    .Requires:
-        >Java 17+
-        >Maven 3.9+
+    Requires:
+    >Java 17+
+    >Maven 3.9+
     
-    .Build and Test:
+    Build and Test:
   
-    -mvn clean test  
-    -mvn package
+        -mvn clean test  
+        -mvn package
 
 + Run
 
-    -java -cp target/classes com.komatsu.sample.ahsdispatch.Run
+    java -cp target/classes com.komatsu.sample.ahsdispatch.Run
 
 + Logs
-    .Logs will be persisted in: logs/dispatch.log
+Logs will be persisted in: logs/dispatch.log
 
 + Author
 Nathália Cauás
