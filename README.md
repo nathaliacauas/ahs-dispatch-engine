@@ -43,22 +43,22 @@ The system is divided into three main layers:
             Persistent structured logging to:
             logs/dispatch.log
 
-        Includes:
-        >Timestamped logs
-        >Log rotation (size-based)
-        >Fail-safe logging behavior
-        >Dispatch Logic
+    Includes:
+    >Timestamped logs
+    >Log rotation (size-based)
+    >Fail-safe logging behavior
+    >Dispatch Logic
 
-        The default policy uses a weighted deterministic score:
+    The default policy uses a weighted deterministic score:
 
-        > score = (priority_weight × mission_priority) − (distance_weight × distance_to_pickup)
-        > (battery_weight × battery_level) − (fairness_penalty × previous_assignments)
+    > score = (priority_weight × mission_priority) − (distance_weight × distance_to_pickup)
+    > (battery_weight × battery_level) − (fairness_penalty × previous_assignments)
 
-        This ensures:
-        Higher priority missions are preferred
-        Closer trucks are preferred
-        Low battery trucks are filtered
-        Repeated assignment to the same truck is penalized
+    This ensures:
+    Higher priority missions are preferred
+    Closer trucks are preferred
+    Low battery trucks are filtered
+    Repeated assignment to the same truck is penalized
 
 + Design Principles
 
@@ -76,12 +76,12 @@ The system is divided into three main layers:
     
     Build and Test:
   
-        -mvn clean test  
-        -mvn package
+        mvn clean test  
+        mvn package
 
 + Run
 
-    java -cp target/classes com.komatsu.sample.ahsdispatch.Run
+        java -cp target/classes com.komatsu.sample.ahsdispatch.Run
 
 + Logs
 Logs will be persisted in: logs/dispatch.log
