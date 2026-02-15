@@ -18,15 +18,15 @@ The system is divided into three main layers:
 
     .Domain Layer (domain)
     Represents core business entities:
-        >AutonomousTruck
-        >HaulMission
-        >GeoPoint
-        >MissionPriority
-        >TruckStatus
+    >AutonomousTruck
+    >HaulMission
+    >GeoPoint
+    >MissionPriority
+    >TruckStatus
 
-        Encapsulation is enforced:
-        >State transitions happen inside AutonomousTruck
-        >Validation logic is embedded in domain objects
+    Encapsulation is enforced:
+    >State transitions happen inside AutonomousTruck
+    >Validation logic is embedded in domain objects
 
     .Dispatch Layer (dispatch)
     Implements the decision engine:
